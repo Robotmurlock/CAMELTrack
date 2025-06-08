@@ -1,8 +1,5 @@
 FROM ubuntu:22.04
 
-ENV TZ=Europe/Belgrade
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
 RUN apt update
 RUN apt-get update && \
     apt-get install -y \
